@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!--
+    ______   __  __        __    __     ______     ______   ______   ______     ______     ______    
+   /\  == \ /\_\_\_\      /\ "-./  \   /\  __ \   /\__  _\ /\__  _\ /\  ___\   /\  == \   /\  ___\   
+   \ \  _-/ \/_/\_\/_     \ \ \-./\ \  \ \  __ \  \/_/\ \/ \/_/\ \/ \ \  __\   \ \  __<   \ \___  \  
+    \ \_\     /\_\/\_\     \ \_\ \ \_\  \ \_\ \_\    \ \_\    \ \_\  \ \_____\  \ \_\ \_\  \/\_____\ 
+     \/_/     \/_/\/_/      \/_/  \/_/   \/_/\/_/     \/_/     \/_/   \/_____/   \/_/ /_/   \/_____/ 
+       
+   \\ PixelMatters \\ pxmatters.com \\ -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Motion Elements | Search</title>
+
+    <!-- Meta-tags -->
+    <meta name="description" content="{{description}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/font.css" type="text/css" cache="false" />
+    <link rel="stylesheet" href="./css/plugin.css" type="text/css" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+  </head>
+  <body>
+    <div id="header-top" class="">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img class="" src="img/logo-2.png" />
+        </a>
+
+        <!-- Search -->
+        <form id="search" class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+        </form>
+
+        <!-- Auth Buttons -->
+        <div class="navbar-right">
+          <a id="login-button" class="button" href="#">Login</a>
+          <a id="register-button" class="button" href="#">Register</a>
+        </div>
+      </div>
+    </div>
+    <div id="header-nav" class="" role="navigation">
+      <div class="container">
+        <ul class="nav nav-pills">
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Animation</a></li>
+          <li><a href="#">After Effects</a></li>
+          <li><a href="#">Apple Motion</a></li>
+          <li><a href="#">3D</a></li>
+          <li><a href="#">Tutorial</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+      <div class="row main-row">
+        <div class="sidebar-col">
+          <!-- First Box -->
+          <div class="sidebar-box">
+            <a class="box-title" href="#">Filters</a>
+            <a class="box-subtitle" href="#">Categories</a>
+            <div class="box-content">
+              <ul class="list_with_circles">
+                <li class="active">Video</li>
+                <li>Animation</li>
+                <li>3D</li>
+              </ul>
+            </div><!--/.box-content-->
+
+            <a class="box-subtitle" href="#">File</a>
+            <div class="box-content">
+              <ul class="list_with_circles">
+                <li class="active">Loopable</li>
+                <li>Matte/Alpha <span class="info">?</span></li>
+                <li>Audio</li>
+                <li>Timelapse</li>
+              </ul>
+            </div><!--/.box-content-->
+            <a id="format-filter" class="box-subtitle" href="#">Format</a>
+            <div class="box-content">
+              <ul class="list_with_circles">
+                <li class="active">F 1</li>
+                <li>F 2</li>
+                <li>F 3</li>
+                <li>F 4</li>
+              </ul>
+            </div><!--/.box-content-->
+            <a id="advanced-filters" class="box-subtitle box-subtitle" href="#">Advanced Filter</a>
+            <div class="box-content">
+              <ul class="list_with_circles">
+                <li class="active">A 1</li>
+                <li>A 2</li>
+                <li>A 3</li>
+                <li>A 4</li>
+              </ul>
+            </div><!--/.box-content-->
+          </div>
+          <!-- Second Box -->
+          <div class="sidebar-box lightbox">
+            <a class="box-title" href="#">My LigthBox</a>
+            <div class="box-content">
+              <div class="lightbox-search">
+                <input type="search" class="lightbox-search-input" placeholder="Search">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span></button>
+                  <button type="button" class="btn active btn-default"><span class="glyphicon glyphicon-th-large"></span></button>
+                </div>
+              </div>
+              <div class="img-wrapper clearfix">
+                <img class="lightbox-img" src="./img/running.png">
+                <img class="lightbox-img" src="./img/hunting.png">
+                <img class="lightbox-img" src="./img/swimming.png">
+                <img class="lightbox-img" src="./img/cycling.png">
+                <img class="lightbox-img" src="./img/snowboarding.png">
+                <img class="lightbox-img" src="./img/surfing.png">
+              </div>
+            </div><!--/.box-content-->
+          </div>
+        </div><!--/.sidebar-col-->
+        <div class="results-col">
+          <!-- Location Bar -->
+          <div class="location-bar">
+            <span>Home | Product</span>
+          </div>
+          <!-- Search Title Bar -->
+          <div class="row search-titlebar">
+            <!-- Titile -->
+            <div class="col-lg-2"><span class="page-title">Sport</span></div>
+            <!-- Tags -->
+            <div class="col-lg-8">
+              <div class="tags-div">
+                <ul id="search-selected-tags" class="nav nav-pills">
+                  <li><a href="#">Video <img src="./img/remove-icon.png"></a></li>
+                  <li><a href="#">Audio <img src="./img/remove-icon.png"></a></li>
+                  <li><a href="#">Long <img src="./img/remove-icon.png"></a></li>
+                  <li><a href="#">Free <img src="./img/remove-icon.png"></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- View Options -->
+            <div class="col-lg-2">
+              <div class="view-options">
+                <div class="option-buttons">
+                  <a href="#"><span class="glyphicon glyphicon-th-list"></span></a>
+                  <span class="icon-separator"></span>
+                  <a class="active" href="#"><span class="glyphicon glyphicon-th-large"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sort Options | Pagination -->
+          <div class="search-options">
+            <div class="sort-options">
+              <span>Sort by: <a href="#" class="option-selector">Best Match</a></span>
+            </div>
+            <div class="pagination-wrapper">
+              <ul class="pagination">
+                <li><a href="#"><i class="fa fa-caret-left"></i></a></li>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row results-content">
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/swimming.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Swimming</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/hunting.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Swimming</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/snowboarding.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Snowboarding</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/cycling.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Cycling</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/running.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Running</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/climb.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Climb</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/running-2.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Running</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/cycling-2.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Cycling</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/swimming-2.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Swimming</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/hunting-2.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Cycling</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/snowboarding-2.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Snowboarding</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/surfing.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Surfing</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/swimming-3.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Running</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/hunting-3.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Hunting</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/snowboarding-3.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Snowboarding</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/cycling-3.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Cycling</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/swimming-4.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Swimming</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/hunting-4.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Hunting</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="result-item">
+              <div class="preview" large-img="./img/item-large.png">
+                <img src="./img/snowboarding-4.png" alt="...">
+                <div class="item-options">
+                  <a class="link-lightbox" href="#"><i class="fa fa-star-o"></i> Add to LightBox</a>
+                  <a class="link-card" href="#"><i class="fa fa-shopping-cart"></i> Add to Card</a>
+                </div>
+              </div>
+              <div class="info">
+                <span>Swimming</span>
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+
+            <a href="" class="result-item next">Next <i class="fa fa-caret-right"></i></a>
+          </div><!--/.results-content-->
+          <!-- Sort Options | Pagination -->
+          <div class="search-options">
+            <div class="sort-options">
+              <span>19 of 156 results</span>
+            </div>
+            <div class="pagination-wrapper">
+              <ul class="pagination">
+                <li><a href="#"><i class="fa fa-caret-left"></i></a></li>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!--/.results-col-->
+      </div><!--/.main-row-->
+    </div><!--/.main-container-->
+
+    <!-- Footer -->
+    <footer class="">
+      <div class="container">
+          <div class="logo">
+            <img src="./img/logo-footer.png">
+          </div>
+
+          <div class="menu">
+            <a href="#">Contact Us</a> |
+            <a href="#">Help</a> |
+            <a href="#">Privacy</a>
+          </div>
+
+          <div class="copyright">
+            <span>Powered by ME &#169; 2013 MotionElements Pte. Ltd</span>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="./js/holder.js"></script> 
+    <script src="./js/app.js"></script>
+    <script src="./js/app.plugin.js"></script>
+    <script src="./js/app.data.js"></script>  
+  </body>
+</html>
