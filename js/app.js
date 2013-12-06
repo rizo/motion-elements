@@ -4,6 +4,7 @@ $(document).ready(function() {
 	$(".result-item .preview").each(function() {
 		$(this).popover({
       		html: true,
+			delay: 400,
       		trigger: 'hover',
       		placement: 'auto right',
       		content: '<img src=\"' + $(this).attr("large-img") + '\" />'
